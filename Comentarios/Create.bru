@@ -1,0 +1,23 @@
+meta {
+  name: Create
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{PATH}}comentario
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{TOKEN}}
+}
+
+body:json {
+  {
+    "idLibro": "bfb4e115-0984-4c77-ba0a-e746a0cca855",
+    "comentario": "DEsde Jeison Arita vamos a probar",
+    "idComentarioPadre": null
+  }
+}
