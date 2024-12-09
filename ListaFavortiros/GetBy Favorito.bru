@@ -1,0 +1,15 @@
+meta {
+  name: GetBy Favorito
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{PATH}}listafavoritos/is-favorito/1de51625-2fd1-4560-8f31-d3fc81de07fc
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{TOKEN}}
+}

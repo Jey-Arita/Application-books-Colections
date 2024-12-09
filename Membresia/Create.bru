@@ -7,11 +7,15 @@ meta {
 post {
   url: {{PATH}}membresia
   body: json
-  auth: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{TOKEN}}
 }
 
 body:json {
   {
-    "activaMembresia": "Gratis"
+    "tipoMembresia": "Premium"
   }
 }
