@@ -1,21 +1,15 @@
 meta {
-  name: Create
+  name: Get All Count Membresia
   type: http
-  seq: 3
+  seq: 4
 }
 
-post {
+get {
   url: {{PATH}}membresia
-  body: json
+  body: none
   auth: bearer
 }
 
 auth:bearer {
   token: {{TOKEN}}
-}
-
-body:json {
-  {
-    "tipoMembresia": "Premiun"
-  }
 }
